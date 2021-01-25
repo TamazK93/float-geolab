@@ -1,12 +1,151 @@
-.test1 {
-	float: left;
+body {background-color: #1d664f;
+	height: 2800px;
+	margin-top: 100px;
 }
-.test2 {
-	float: right;
+/*.style {
+	margin-top: 100px;
+}*/
+.style:after {
+	content: '';
+	clear: both;
+	background-color: white;
+	width: 100%;
+	height: 2px;
+	display: block;
 }
-.wraper {
+.header-wraper {
 	background-color: red;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 20;
 }
+.plane {
+	width: 8%;
+	height: 8%;
+	float: right;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+.nav {
+	text-transform: uppercase;
+	float: right;
+	margin: 0 auto;
+	text-align: center;
+}
+.nav-li {display: inline-block;
+	margin-top: 2%;
+	
+}
+.nav-a {color: white;
+		font-size: 30px;
+		font-family: sans-serif;
+		margin-right: 250px;
+}
+.active{color: #EE4036;}
 .clear {
 	clear: both;
+}
+
+.wraper1 {
+	float: left;
+	margin: 5% 1%;
+	width: 48%;
+
+}
+.wraper2 {
+	float: right;
+	margin: 5% 1%;
+	width: 48%;
+
+}
+.image-1 {
+	float: right;
+	margin-left:2%;
+	margin-right: 2%;
+	margin-top: 1%;
+	width: 20%;
+	height: 20%;
+}
+.image-2 {
+	float: left;
+	margin-left:2%;
+	margin-right: 2%;
+	margin-top: 1%;
+	width: 20%;
+	height: 20%;
+}
+.text-wraper {
+	background-color: yellow;
+}
+.clear-nav::after {
+	content: '';
+	clear: both;
+	text-align: center;
+	width: 100%;
+	height: 5px;
+	background-color: green;
+	margin: 0 auto;
+	display: block;
+}
+.clear-nav::before {
+	content: '';
+	clear: both;
+	text-align: center;
+	width: 100%;
+	height: 5px;
+	background-color: green;
+	margin: 0 auto;
+	display: block;
+}
+.wraper1::after {
+	content: '';
+	clear:both;
+	display: block;
+	background-color: green;
+	width: 100%;
+	height: 5px;
+}
+.wraper2::after{
+	content: '';
+	clear:both;
+	display: block;
+	background-color: green;
+	width: 100%;
+	height: 5px;
+}
+ /*ne ponimaiu naxer nujno*/
+
+
+.wraper3 {
+	width: 600px;
+	height: 600px;
+	background-color: white;
+	position: relative;
+	margin: 1%;
+
+}
+.box:nth-child(1) {
+	background-color: yellow;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 500px;
+	left: 50px;
+}
+.box:nth-child(2) {
+	background-color: pink;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 800px;
+	left: 850px;
+}
+.box:nth-child(3) {
+	background-color: aqua;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 1200px;
+	left: 1450px;
 }
